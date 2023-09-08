@@ -1,0 +1,109 @@
+baseUrl: ""
+title: João Tiago Vidal
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: João
+  description: "My personal website"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Me
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Home"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+
+  # home-info mode
+  homeInfoParams:
+    Title: "JOÃO TIAGO VIDAL"
+    Content: MsC Informatics Engineer Student @ FCUL
+
+  cover:
+      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pxfuel.com%2Fen%2Fquery%3Fq%3Dbest%2Btech%2Bbackgrounds&psig=AOvVaw1gDcyFOPBbJDfo6D56Abc_&ust=1694213087890000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNCe0NvJmYEDFQAAAAAdAAAAABAE"
+      # can also paste direct link from external site
+      # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
+      alt: "<alt text>"
+      caption: "<text>"
+      relative: false # To use relative path for cover image, used in hugo Page-bundles
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/joaotiago-vidal/"
+    - name: instagram
+      url: "https://www.instagram.com/_joaotiagov_/"
+    - name: github
+      url: "https://github.com/joaotiago-vidal"
+    - name: email
+      url: "mailto:email@server.com"
+
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: about
+      name: About Me
+      url: /about/
+      weight: 20 
+    - identifier: skills
+      name: Programming
+      url: /skills/
+      weight: 10
