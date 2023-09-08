@@ -99,6 +99,10 @@ params:
 
 menu:
   main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
     - identifier: about
       name: About Me
       url: /about/
